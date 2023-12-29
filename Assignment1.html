@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <style>
+         body{
+            top: 0px;
+            left: 0px;
+            width: 1366px;
+            height: 973px;
+            background: #FBFBFB 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border: #FBFBFB;
+            border-style:ridge;
+        }
+        .logo{
+            margin-top: 16px;
+            margin-left: 112px;
+            width: 32px;
+            height: 47px;
+            text-align: left;
+            font: normal normal 600 33px/50px Poppins;
+            letter-spacing: 0px;
+            color: #EB2929;
+            opacity: 1;
+            display: inline-block;
+        }
+        .logo{
+            display: inline-block;
+            margin-left: 102px;
+            width: 50px;
+            height: 50px;
+            border-radius: 96%;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+            margin-top: 25px;
+            text-align: center;
+        }
+        .logo-header{
+            height: 52px;
+            border-top: 15px;
+            border-left: 102px;
+            background-color: #CE0505;
+            block-size: 80px;
+            margin-top: -30px;
+        }
+        .login{
+            background-color: #CE0505;
+                color: #FFFFFF;
+                border: #CE0505;
+                margin-left: 900px;
+                margin-top: 40px;
+                display: inline-block;
+            }
+        .create-account{
+            top: 17px;
+                left: 1084px;
+                width: 181px;
+                height: 46px;
+                border: 1px solid #FFFFFF;
+                border-radius: 3px;
+                opacity: 1;
+                block-size: 36px;
+                color: #FFFFFF;
+                background-color: #CE0505;
+                display: inline-block;
+            }
+            .heading{
+            margin-top: 30px;
+            margin-left: 113px;
+            width: 514px;
+            height: 51px;
+            margin-left: 100px;
+            font: normal normal bold 36px/55px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            }
+            .section-1{
+            top: 195px;
+            left: 153px;
+            width: 260px;
+            height: 682px;
+            margin-top: -10px;
+            margin-left: 100px;
+            text-align: center;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+            border: solid;
+            border-color: #FFFFFF;
+            }
+            .filter{
+                top: 212px;
+                left: 139px;
+                width: 55px;
+                height: 25px;
+                margin-right: 30px;
+                margin-left: 30px;
+                margin-top: 20px;
+                text-align: left;
+                vertical-align: top;
+                font: normal normal 600 18px/27px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+            }
+            .location{
+                top: 247px;
+                left: 140px;
+                width: 106px;
+                height: 20px;
+                margin-right: 140px;
+                margin-left: 30px;
+                text-align: left;
+                vertical-align: top;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+            }
+            .selected-location{
+                top: 100px;
+                left: 140px;
+                width: 208px;
+                height: 35px;
+                margin-right: 30px;
+                margin-left: 30px;
+                text-align:left;
+                vertical-align: 300px;
+                border: 1px solid #8C96AB;
+                border-radius: 3px;
+                opacity: 1
+            }
+            .cuisine{
+                margin-right: 30px;
+                margin-left: 30px;
+                text-align: left;
+                margin-top: -300px;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+            }
+            .checkbox{
+                width: 18px;
+                margin-left: 3px;
+                text-align: left;
+                height: 18px;
+                border: 2px solid #3A5075;
+                border-radius: 2px;
+                opacity: 1;
+            }
+            .checkbox-text{
+                width: 86px;
+                height: 20px;
+                text-align: left;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #8C96AB;
+                opacity: 1;
+                padding-inline: 10px;
+            }
+            .section-2{
+                width: 794px;
+                height: 300px;
+                margin-left: 400px;
+                margin-top: -686px;
+                text-align: left;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                opacity: 1;
+                border: solid;
+                border-color: #FFFFFF;
+                position: absolute;
+            }
+            .section-3{
+
+                width: 794px;
+                height: 300px;
+                /* margin-left: 400px; */
+                margin-top: 60px; 
+                text-align: left;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                opacity: 1;
+                border: solid;
+                border-color: #FFFFFF;
+                position: absolute;
+                       }
+            .cost{
+                margin-right: 30px;
+                margin-left: 30px;
+                text-align: left;
+                /* margin-top: -300px; */
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+            }
+            .cost-radiobutton{
+                left: 140px;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #3A5075;
+                border-radius: 9px;
+                opacity: 1;
+
+            }
+            .radiobutton-text{
+                width: 86px;
+                height: 20px;
+                text-align: left;
+                letter-spacing: 0px;
+                color: #8C96AB;
+                 opacity: 1;
+                 padding-inline: 10px;
+            }
+            .sort{
+                margin-right: 30px;
+                margin-left: 10px;
+                text-align: left;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+            }
+            .sort-radiobutton{
+                /* left: 140px; */
+                margin-left: -5px;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #3A5075;
+                border-radius: 9px;
+                opacity: 1;
+            }
+            .sort-radiobutton-text
+            {
+                width: 86px;
+                height: 20px;
+                text-align: left;
+                letter-spacing: 0px;
+                color: #8C96AB;
+                 opacity: 1;
+                 padding-inline: 10px;
+            }
+            .image1{
+                height: 120px;
+                width: 120px;
+                margin-left: 40px;
+                margin-top: 30px ;
+                border-radius: 20px;
+                display: inline-block;
+            }
+            hr{
+                width:700px;
+                color: #DEDFE5;
+                border-style: solid;
+                margin-top: 40px;
+                
+            }
+            .shop-details-1{
+                margin-top: 50px;
+             margin-left: 250px 
+            }
+            .shop-1-heading-1{
+                color: #192F60;
+                width: 303px;
+                height: 43px;
+                text-align: left;
+                font: normal normal 600 30px/46px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+                margin-left: -20px;
+                margin-top: -120px;
+            }
+            .shop-1-heading-2{
+                width: 40px;
+                height: 23px;
+                text-align: left;
+                font: normal normal medium 16px/30px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+                margin-top: -20px;
+                margin-left: -18px;
+            }
+            .shop-1-heading-3{
+                width: 370px;
+               height: 23px;
+               text-align: left;
+               font: normal normal normal 16px/30px Poppins;
+               letter-spacing: 0px;
+               color: #636F88;
+               opacity: 1;
+               margin-top: -20px;
+               margin-left: -18px;
+            }
+            .image1{
+                width: 120px;
+                height: 120px;
+                opacity: 1;
+                margin-left: -200px;
+                margin-top: -20px;
+            }
+            .price-1{
+                width: -70px;
+               height: 80px;
+               text-align: left;
+               font: normal normal normal 16px/30px Poppins;
+              letter-spacing: 0px;
+              color: #636F88;
+              opacity: 1;
+            }
+            .cost-1-details-1{
+                /* width:80px; */
+                height: 5px;
+                margin-left: 50px;
+            }
+            .cost-1-price-detail{
+                width: 21px;
+                height: 69px;
+                text-align: left;
+                font: normal normal normal 16px/30px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+                margin-left: 220px;
+                margin-top: -60px 
+            }
+            .pagination_box{
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 1px solid #8C96AB;
+                border-radius: 7px;
+                opacity: 1;
+                font: normal normal medium 20px/30px Poppins;
+               letter-spacing: 0px;
+               color: #8C96AB;
+               opacity: 1;
+               text-align: center;
+               font-size: 25px;
+            }
+            .pagination{
+                     margin-left: 600px;
+            }
+            .class-2{
+                background-color: #8C96AB;
+                color: #FFFFFF;
+            }
+
+    </style>
+</head>
+<body>
+       <div class="logo-header">
+                <a href="">
+              <div class="logo">e!</div>
+               </a>
+                    <button class="login">Login</button>
+                    <button class="create-account">Create Account</button>
+                </div>
+            
+        
+       <div>
+            <h2 class="heading">Breakfast Places in Mumbai</h2>
+       </div>
+    <div>
+         <div class="section-1" style="display: inline-block;">
+                <div>
+                     <div class="filter"><h4>Filters</h4></div>
+                     <br>
+                         <div><label class="location" for="location">Select Location</label></div>
+                         <br>
+                            <div>
+                                <select class="selected-location" id="location">
+                                <option selected disabled>Select Location</option>
+                                <option>Banglore</option>
+                                <option>Gujrat</option>
+                                <option>Bhopal</option>
+                                <option>Delhi</option>
+                               </select>
+                            </div>
+                            <br>
+                   <div class="cuisine">
+                        <h4>Cuisine</h4>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="north indian" name="cuisine">
+                            <label class="checkbox-text" for="north indian">North Indian</label> 
+                        </div>
+                        <div>
+                             <input class="checkbox" type="checkbox" id="south indian" name="cuisine">
+                            <label class="checkbox-text" for="south indian">South Indian</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="chineese" name="cuisine">
+                            <label class="checkbox-text" for="chineese">Chinese</label>
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="fast food" name="cuisine">
+                            <label class="checkbox-text" for="fast food">Fast Food</label> 
+                        </div>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="street food" name="cuisine">
+                            <label class="checkbox-text" for="street food">Street Food</label>
+                        </div>
+                </div>
+            </div>
+            <div class="cost">
+                    <h4>Cost For Two</h4>
+                    <div>
+                         <input class="cost-radiobutton" type="radio" id="price-margin-1" name="cost">
+                        <label class="radiobutton-text" for="price-margin-1">Less than ` 500</label> 
+                    </div>
+                    <div>
+                        <input class="cost-radiobutton" type="radio" id="price-margin-2" name="cost">
+                        <label class="radiobutton-text" for="price-margin-2">` 500 to ` 1000</label>
+                    </div>
+                    <div>
+                        <input class="cost-radiobutton" type="radio" id="price-margin-3" name="cost">
+                        <label class="radiobutton-text" for="price-margin-3">` 1000 to ` 1500</label>
+                    </div>
+                    <div>
+                       <input class="cost-radiobutton" type="radio" id="price-margin-4" name="cost">
+                       <label class="radiobutton-text" for="price-margin-4">` 1500 to ` 2000</label> 
+                    </div>
+                    <div>
+                        <input class="cost-radiobutton" type="radio" id="price-margin-5" name="cost">
+                        <label class="radiobutton-text" for="price-margin-5">` 2000+</label>
+                    </div>
+      <div class="sort">
+        <h4>Sort</h4>
+        <div>
+          <input class="sort-radiobutton" type="radio" id="price-low-to-high" name="sort">
+          <label class="sort-radiobutton-text" for="price-low-to-high">Price low to high</label> 
+      </div>
+      <div>
+          <input class="sort-radiobutton" type="radio" id="price-high-to-low" name="sort">
+          <label class="sort-radiobutton-text" for="price-high-to-low">Price high to low</label>
+      </div>
+   </div>
+  </div> 
+  </div>
+  </div>
+</div>    
+</div>
+        <div class="section-2" style="display: inline-block;">
+                   <div class="shop-details-1">
+                    <a href="">
+                        <img class="image1" src="./image1.png" alt="food image">
+                    </a>
+                    
+                    <h3 class="shop-1-heading-1">The Big Chill Cakery</h3>
+                    <h4 class="shop-1-heading-2">FORT</h4>
+                    <h1 class="shop-1-heading-3">Shop 1, Plot D, Samruddhi Complex, Chincholi …</h1>
+                
+                </div>
+                <hr>
+                <div class="price-1">
+                    
+                    <h5 class="cost-1-details-1">CUISINES: </h5>
+                    <h5 class="cost-1-details-1">COST FOR TWO:</h5>
+                    <h5 class="cost-1-price-detail">Bakery ₹700</h5>
+               
+                </div>
+                             
+              
+
+
+
+        <div class="section-3" style="display: inline-block;">
+            <div class="shop-details-1">
+                <a href="">
+                    <img class="image1" src="./image1.png" alt="food image">
+                </a>
+                <h3 class="shop-1-heading-1">The Bake Shop</h3>
+                <h4 class="shop-1-heading-2">FORT</h4>
+                <h1 class="shop-1-heading-3">Shop 1, Plot D, Samruddhi Complex, Chincholi …</h1>
+            </div>
+            <hr>
+            <div class="price-1">
+                <h5 class="cost-1-details-1">CUISINES: </h5>
+                <h5 class="cost-1-details-1">COST FOR TWO:</h5>
+                <h5 class="cost-1-price-detail">Bakery ₹700</h5>
+
+            </div>
+        
+        
+        </div>
+         
+
+    </div>
+    <div class="pagination">
+        <button class="pagination_box">&lt;</button>
+        &ensp;
+        <button class="pagination_box class-2">1</button>
+        &ensp;
+        <button class="pagination_box">2</button>
+        &ensp;
+        <button class="pagination_box">3</button>
+        &ensp;
+        <button class="pagination_box">4</button>
+        &ensp;
+        <button class="pagination_box">5</button>
+        &ensp;
+        <button class="pagination_box">&gt;</button>
+    </div>
+    </div>
+</body>
+</html>
